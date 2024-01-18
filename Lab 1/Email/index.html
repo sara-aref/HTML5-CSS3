@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web forms validation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <h1>Change Email Address</h1>
+            <input type="text" name="username" id="username" placeholder="Username" pattern="[a-zA-Z]{3,8}" title="please enter your name between 3 and 8 characters" required autocomplete="off">
+            <input type="emai" name="email" id="email" placeholder="Email" pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+" title="Email can't include any special character" required autocomplete="off">
+            <button>Change</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>

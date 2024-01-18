@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <div id="change">
+                <img src="1.jpg">
+                <audio loop>
+                    <source src="1.mp3" id="newaudio">
+                </audio>
+            </div>
+            <input id="duration" type="range" min="0" max="" value="0"/>
+            <div>
+                <button class="icons" id="play"><i class="fa-solid fa-play"></i></button>
+                <button class="icons" id="pause"><i class="fa-solid fa-pause"></i></button>
+                <button class="icons" id="stop"><i class="fa-solid fa-stop"></i></button>
+                <button class="icons" id="mute"><i class="fa-solid fa-volume-off"></i></button>
+            </div>
+            
+            <div class="ranges">
+                <i class="fa-solid fa-volume-low"></i>
+                <input class="input-range" id="volume" type="range" min="0" max="1"  step=".1" value="1">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="ranges">
+                <i class="fa-solid fa-backward"></i>
+                <input class="input-range" id="rate" type="range" min=".25" max="2" value="1" step=".25">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            
+
+            <button class="songs" id="tkhf">La tkhf</button>
+            <button class="songs" id="haddeka">Al haddeka</button>
+            <button class="songs" id="remi">Remi</button>
+            <button class="songs" id="asdkaa">Ahd El asdkaa</button>
+        </form>
+        <script src="https://kit.fontawesome.com/09667f7a1b.js" crossorigin="anonymous"></script>
+
+        <script src="script.js">
+        </script>
+    </body>
+</html>
+
