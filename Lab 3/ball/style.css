@@ -1,0 +1,45 @@
+.container{
+    position: relative;
+}
+
+.grass{
+    margin-top: 50px;
+    width: 100%;
+    top: 20px;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    top: 110px;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+img{
+    position: absolute;
+}
+
+.player1{
+    max-width: 100px;
+    height: 200px;
+    left: 80px;
+}
+
+.player2{
+    width: 100px;
+    height: 200px;
+    right: 150px;
+}
+
+@keyframes ball{
+    0%{
+        left:10%;
+    }
+    100%{
+        left:80%;
+    }
+}

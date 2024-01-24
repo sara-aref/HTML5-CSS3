@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#image{
+    width: 500px;
+    height: 500px;
+    background-image: url(images/sun.avif), url(images/bird.avif), url(images/thankful-businessman-with-open-arms-field_254268-363.jpg);
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    width: 100px;
+    padding: 5px;
+}
