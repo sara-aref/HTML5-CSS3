@@ -24,7 +24,6 @@
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 @keyframes circlerotate {
@@ -46,12 +45,20 @@
 }
 
 @keyframes bike{
-    0%{
-        left:10%;
+    0% {
+        transform: translateX(0px) rotateY(0deg);
     }
-
-    100%{
-        left:80%;
-        transform: rotateY(180deg);
+    50%{
+        transform: translateX(780px) rotateY(0deg);
+    }
+    51% {
+        transform: translateX(780px) rotateY(180deg);
+    }
+    99% {
+        transform: translateX(0px) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(0px) rotateY(0deg);
     }
 }
+
